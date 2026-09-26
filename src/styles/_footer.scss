@@ -1,0 +1,40 @@
+@import 'variables';
+
+.footer {
+  padding: 40px 0;
+  background-color: $color-background;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__copy {
+    font-size: 12px;
+    color: $color-secondary;
+    letter-spacing: 0.5px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__link {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $color-secondary;
+    transition: color $transition-duration;
+
+    &:hover {
+      color: $color-text;
+    }
+  }
+}

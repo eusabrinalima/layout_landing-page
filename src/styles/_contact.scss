@@ -1,0 +1,66 @@
+@import 'variables';
+
+.contact {
+  padding: 80px 0;
+  border-bottom: 1px solid $color-border;
+
+  &__form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-secondary;
+  }
+
+  &__input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    background-color: $color-surface;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+    color: $color-text;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color $transition-duration;
+
+    &::placeholder {
+      color: #555;
+    }
+
+    &:focus {
+      border-color: $color-text;
+    }
+  }
+
+  &__button {
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background-color: $color-accent;
+    color: $color-text;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity $transition-duration;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}

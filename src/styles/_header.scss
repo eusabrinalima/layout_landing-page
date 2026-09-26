@@ -1,0 +1,49 @@
+@import 'variables';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba($color-background, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $color-border;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+  }
+
+  &__logo {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-text;
+    transition: color $transition-duration;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__link {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-secondary;
+    transition: color $transition-duration;
+
+    &:hover {
+      color: $color-text;
+    }
+  }
+}
