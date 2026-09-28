@@ -1,12 +1,15 @@
-@import 'variables';
-
 .container {
+  box-sizing: border-box;
   width: 100%;
-  max-width: $container-max-width;
   margin: 0 auto;
   padding: 0 20px;
 
-  @media (min-width: 768px) {
-    padding: 0 40px;
+  @media (min-width: 744px) {
+    padding: 0 72px;
+  }
+
+  @media (min-width: 1260px) {
+    max-width: 1260px;
+    padding: 0 120px;
   }
 }
